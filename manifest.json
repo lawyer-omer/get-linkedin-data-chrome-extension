@@ -1,0 +1,33 @@
+{
+    "name": "LDPE",
+    "version": "1.0.0",
+    "description": "With this extension, you can easly parse company data from Linkedin to your Airtable workspace.",
+    "manifest_version": 3,
+    "author": "Omer Faruk Aydin",
+    "background": {
+        "service_worker":
+        "service-worker.js"
+      },
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://*.linkedin.com/company/*"],
+          "css": ["styles.css"],
+          "js": ["content.js"],
+          "run_at": "document_end"
+        }
+      ],
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "action": {
+        "default_title": "Linkedin data parse extension. Created by Omer Faruk Aydin",
+        "default_popup": "popup.html"
+    } 
+}
