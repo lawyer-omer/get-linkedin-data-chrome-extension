@@ -31,7 +31,7 @@
     And add your extension.
     
     
-3.  **Your bot is now running**
+3.  **Your extension is now running**
 
     Edit source code, add your airtable api key and base name. 
     
