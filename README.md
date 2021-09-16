@@ -19,13 +19,13 @@
 3.  **Upload your extension**
 
     Open your browser and go to 
-        ```shell
+    ```shell
     chrome://extensions/
     ```
     
-    Click 
+    **Click** 
     
-            ```shell
+    ```shell
     Load Unpacked   
     ```
     And add your extension.
